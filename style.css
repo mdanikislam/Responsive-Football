@@ -34,7 +34,9 @@ a {
     padding: 4% 10% 4%;
     color: #fff;
 }
-
+.toggler {
+    visibility: hidden;
+}
 
 nav {
     display: flex;
@@ -338,10 +340,10 @@ nav button {
         margin-top: 10%;
     }
 
-    .home-left,
-    .home-right,
+    .hero-area-title,
+    .hero-area-img,
     .highlight-left,
-    .highlight-right {
+    .highlight-right{
         width: 100%;
         padding-bottom: 50px;
     }
@@ -354,16 +356,16 @@ nav button {
         margin-bottom: 30px;
     }
 
-    #cards {
+    #players{
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .card {
+    .player {
         padding: 5%;
 
     }
 
-    .card-body {
+    .player-body {
         line-height: 1.2;
         font-size: medium;
     }
@@ -395,7 +397,7 @@ nav button {
 }
 
 @media (max-width: 478px) {
-    #cards {
+    #players{
         grid-template-columns: repeat(1, 1fr);
     }
 
